@@ -7,10 +7,12 @@ import Navbar from '@/components/navbar.vue';
 
 
 <template>
-  <div class="navbar w-100 ">
-    <Navbar></Navbar>
-  </div>
-  <div class="first">
-    <FirstPage></FirstPage>
-  </div>
+  <section id="Home">
+    <div class="navbar w-100 ">
+      <Navbar></Navbar>
+    </div>
+    <div class="first">
+      <FirstPage></FirstPage>
+    </div>
+  </section>
 </template>

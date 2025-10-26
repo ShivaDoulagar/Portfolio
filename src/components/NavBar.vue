@@ -1,5 +1,16 @@
 <script setup>
+import { ref } from 'vue';
 
+const theme = ref('light')
+
+const toggleTheme = () => {
+  theme.value = theme.value === 'light' ? 'dark' : 'light'
+  console.log(theme.value)
+  localStorage.setItem('theme', theme.value)
+  document.documentElement.setAttribute('data-bs-theme', theme.value)
+
+
+}
 
 </script>
 <template>
@@ -7,15 +18,19 @@
   <nav>
     <div class="navbar w-100 d-flex justify-content-around align-items-center  text-light">
       <div class="nav_heading">
-        <h1>Shiva Doulagar</h1>
+        <h1 data-aos="fade-right">Shiva Doulagar</h1>
       </div>
       <div class="right ">
         <div class="navbar gap-4 d-flex justify-content-center align-items-center">
-          <a class=" " data-aos="fade-down" href="#">Home</a>
-          <a class="" href="#">About me</a>
-          <a class="" href="#">Projects</a>
-          <a class="">Experience</a>
-          <a class="">Contact me</a>
+          <a class="" data-aos="fade-down" data-aos-delay="100" href="#Home">Home</a>
+          <a class="" data-aos="fade-down" data-aos-delay="200" href="#about_me">About me</a>
+          <a class="" data-aos="fade-down" data-aos-delay="300" href="#">Projects</a>
+          <a class="" data-aos="fade-down" data-aos-delay="400" href="#">Experience</a>
+          <a class="" data-aos="fade-down" data-aos-delay="500" href="#">Contact me</a>
+          <button @click="toggleTheme" value="dark" class="ps-3 toggle-btn  " data-aos="fade-down" data-aos-delay="600"
+            href="#">
+            <i :class="theme === 'light' ? 'bi bi-moon-fill' : 'bi bi-sun-fill'"></i>
+          </button>
         </div>
       </div>
     </div>
@@ -24,18 +39,43 @@
 </template>
 
 
+
+
+
 <style scoped>
 * {
   box-sizing: border-box;
 }
 
-nav {
-  background-color: black;
-  border-bottom: #b3b3b3;
-  width: 100vw;
-  height: 10vh;
+
+.toggle-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
 }
 
+nav {
+  background-color: transparent !important;
+
+  /* border-bottom: #b3b3b3; */
+  width: 100vw;
+  /* height: 1vh; */
+  /* z-index: 3; */
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+[data-bs-theme='light'] nav {
+  background-color: white;
+  color: black !important;
+}
+
+.navbar {
+  background: transparent !important;
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
 
 
 h1 {
@@ -46,7 +86,7 @@ h1 {
 a {
   position: relative;
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
   padding: 4px 0;
   background: linear-gradient(to left, white 50%, #FE4A2B 50%);
   background-size: 200% 100%;
@@ -54,14 +94,31 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: underline;
-  transition: background-position 0.2s ease-in-out;
+  transform: scale(1);
+  transition: background-position 0.2s ease-in-out, transform 0.3s ease-in-out;
   font-size: 20px;
-
+  text-shadow: 0 0 80px #FE4A2B;
 }
 
 a:hover {
   background-position: left bottom;
-  text-shadow: horizontal-shadow vertical-shadow blur #FE4A2B;
+  text-shadow: 0 0 40px #FE4A2B;
+  list-style: underline;
+  transform: scale(1.1);
+}
 
+@media (max-width:768px) {
+  .right {
+    visibility: hidden;
+  }
+
+  .nav_heading {
+    justify-content: start;
+    margin-left: 20px;
+  }
+
+  .navbar {
+    justify-content: start !important;
+  }
 }
 </style>
