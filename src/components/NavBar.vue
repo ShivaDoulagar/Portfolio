@@ -15,9 +15,9 @@ const toggleTheme = () => {
 </script>
 <template>
 
-  <nav>
+  <nav class="overflow-x-hidden">
     <div class="navbar w-100 d-flex justify-content-around align-items-center  text-light">
-      <div class="nav_heading">
+      <div class="nav_heading ">
         <h1 data-aos="fade-right">Shiva Doulagar</h1>
       </div>
       <div class="right ">
@@ -27,10 +27,10 @@ const toggleTheme = () => {
           <a class="" data-aos="fade-down" data-aos-delay="300" href="#">Projects</a>
           <a class="" data-aos="fade-down" data-aos-delay="400" href="#">Experience</a>
           <a class="" data-aos="fade-down" data-aos-delay="500" href="#">Contact me</a>
-          <button @click="toggleTheme" value="dark" class="ps-3 toggle-btn  " data-aos="fade-down" data-aos-delay="600"
+          <!-- <button @click="toggleTheme" value="dark" class="ps-3 toggle-btn  " data-aos="fade-down" data-aos-delay="600"
             href="#">
             <i :class="theme === 'light' ? 'bi bi-moon-fill' : 'bi bi-sun-fill'"></i>
-          </button>
+          </button> -->
         </div>
       </div>
     </div>
@@ -109,16 +109,24 @@ a:hover {
 
 @media (max-width:768px) {
   .right {
-    visibility: hidden;
+    display: none;
   }
 
   .nav_heading {
+    display: flex;
+    align-items: center;
     justify-content: start;
     margin-left: 20px;
   }
 
+
+
   .navbar {
     justify-content: start !important;
+    /* max-height: 8vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 </style>

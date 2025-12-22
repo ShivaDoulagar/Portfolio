@@ -135,6 +135,14 @@ img:hover {
 @media (max-width:768px) {
   .firstpage {
     position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: space-between; */
+    align-items: center;
+    /* background-color: gray !important; */
   }
 
   .left {
@@ -142,23 +150,33 @@ img:hover {
     width: 100vw;
     display: flex;
     flex-direction: column;
-
-    width: 100vw;
-
   }
 
-  h1 {
-    font-size: 2em;
+  .content{
+    /* background-color: yellow; */
+    /* padding: 0 -30px 0 -/30px; */
+    width: 90vw;
+    position: absolute;
+    top: 53vh;
+    justify-content: end;
+  }
+
+  h1  {
+    font-size: 2.6em;
+  }
+
+  h1, h3 ,p{
+       margin: 0 -30px 0  -30px;
   }
 
   .my_image {
-    height: 60vh;
-    margin-top: -180px;
+    height: 50vh;
+    margin-top: -300px;
   }
 
   .center {
     width: 100vw !important;
-    height: 40vh;
+    /* height: 10vh; */
     background: blue;
   }
 }

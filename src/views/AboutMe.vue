@@ -42,7 +42,7 @@ const journeyItems = [
 </script>
 
 <template>
-  <section id="about_me">
+  <section id="about_me overflow-x-hidden">
     <div class="about_me text-light">
       <div class="content">
         <h1 class="main-title">My Journey</h1>

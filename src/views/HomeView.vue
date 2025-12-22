@@ -1,6 +1,6 @@
 <script setup>
 import FirstPage from '@/components/FirstPage.vue';
-import Navbar from '@/components/navbar.vue';
+import Navbar from '@/components/NavBar.vue';
 
 
 </script>
@@ -8,11 +8,17 @@ import Navbar from '@/components/navbar.vue';
 
 <template>
   <section id="Home">
-    <div class="navbar w-100 ">
-      <Navbar></Navbar>
+    <div class="navbar w-100 overflow-x-hidden">
+      <Navbar class="nav"></Navbar>
     </div>
-    <div class="first">
+    <div class="first overflow-x-hidden">
       <FirstPage></FirstPage>
     </div>
   </section>
 </template>
+
+
+<style scoped>
+
+
+</style>
