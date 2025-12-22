@@ -27,24 +27,5 @@ onMounted(() => {
 </template>
 
 <style>
-:global([data-bs-theme="light"]) {
-  background-color: white;
-  color: black !important;
-}
 
-:global([data-bs-theme="dark"]) {
-  background-color: black;
-  color: white !important;
-}
-
-[data-bs-theme='light'] body {
-  background-color: white;
-  color: black !important;
-}
-
-
-[data-bs-theme='light'] nav {
-  background-color: white;
-  color: black !important;
-}
 </style>

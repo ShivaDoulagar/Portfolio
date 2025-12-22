@@ -1,16 +1,4 @@
 <script setup>
-import { ref } from 'vue';
-
-const theme = ref('light')
-
-const toggleTheme = () => {
-  theme.value = theme.value === 'light' ? 'dark' : 'light'
-  console.log(theme.value)
-  localStorage.setItem('theme', theme.value)
-  document.documentElement.setAttribute('data-bs-theme', theme.value)
-
-
-}
 
 </script>
 <template>
@@ -55,7 +43,7 @@ const toggleTheme = () => {
 }
 
 nav {
-  background-color: transparent !important;
+  background-color: rgba(255, 255, 255, 0) !important;
 
   /* border-bottom: #b3b3b3; */
   width: 100vw;
