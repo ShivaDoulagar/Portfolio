@@ -1,6 +1,7 @@
 <script setup>
 import AboutMe from './views/AboutMe.vue';
 import HomeView from './views/HomeView.vue';
+import ProjectsPage from './views/ProjectsPage.vue';
 
 
 import { onMounted } from 'vue'
@@ -22,6 +23,9 @@ onMounted(() => {
   </div>
   <div>
     <AboutMe></AboutMe>
+  </div>
+  <div>
+    <ProjectsPage></ProjectsPage>
   </div>
 
 </template>

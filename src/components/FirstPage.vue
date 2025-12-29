@@ -47,7 +47,7 @@
 
 
 .typingEffect {
-    display: inline-block; /* ADD THIS LINE! */
+    display: inline-block;
     width: 0;
     overflow: hidden;
     max-width: fit-content;

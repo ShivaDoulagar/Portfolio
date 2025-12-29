@@ -31,7 +31,7 @@ defineProps({
 
 <style scoped>
 .logo {
-  width: 100%;
+  width: 80%;
 }
 
 
@@ -56,7 +56,7 @@ defineProps({
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid #FE4A2B;
   border-radius: 12px;
-  padding: 24px;
+  padding: 20px;
   max-width: 500px;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
@@ -84,14 +84,14 @@ defineProps({
 
 .card-subtitle {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   margin-bottom: 12px;
   font-weight: 500;
 }
 
 .card-description {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   line-height: 1.6;
   margin: 0;
 }
