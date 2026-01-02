@@ -1,0 +1,58 @@
+{
+  "hash": "0eddd09c",
+  "configHash": "4cca32b4",
+  "lockfileHash": "3cb9ce92",
+  "browserHash": "2fbc2ff4",
+  "optimized": {
+    "vue": {
+      "src": "../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "036ba997",
+      "needsInterop": false
+    },
+    "primevue/config": {
+      "src": "../../node_modules/primevue/config/index.mjs",
+      "file": "primevue_config.js",
+      "fileHash": "4b37b8f2",
+      "needsInterop": false
+    },
+    "@primeuix/themes/aura": {
+      "src": "../../node_modules/@primeuix/themes/dist/aura/index.mjs",
+      "file": "@primeuix_themes_aura.js",
+      "fileHash": "63165a49",
+      "needsInterop": false
+    },
+    "primevue": {
+      "src": "../../node_modules/primevue/index.mjs",
+      "file": "primevue.js",
+      "fileHash": "2a78d491",
+      "needsInterop": false
+    },
+    "primevue/carousel": {
+      "src": "../../node_modules/primevue/carousel/index.mjs",
+      "file": "primevue_carousel.js",
+      "fileHash": "8d20b590",
+      "needsInterop": false
+    },
+    "vue-router": {
+      "src": "../../node_modules/vue-router/dist/vue-router.mjs",
+      "file": "vue-router.js",
+      "fileHash": "0e3bb6f2",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-BSMZTPDX": {
+      "file": "chunk-BSMZTPDX.js"
+    },
+    "chunk-LFO6UJQQ": {
+      "file": "chunk-LFO6UJQQ.js"
+    },
+    "chunk-43RSHCVY": {
+      "file": "chunk-43RSHCVY.js"
+    },
+    "chunk-CEBIFPJU": {
+      "file": "chunk-CEBIFPJU.js"
+    }
+  }
+}

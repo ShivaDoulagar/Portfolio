@@ -1,16 +1,15 @@
 <script setup>
-
 import { ref, onMounted } from 'vue'
 
 const skills = [
-  { name: 'HTML', icon: new URL('../assets/html_logo.png', import.meta.url).href },
-  { name: 'CSS', icon: new URL('../assets/css_logo.png', import.meta.url).href },
-  { name: 'JavaScript', icon: new URL('../assets/js_logo.png', import.meta.url).href },
+  { name: 'HTML', icon: new URL('../assets/html.png', import.meta.url).href },
+  { name: 'CSS', icon: new URL('../assets/css.png', import.meta.url).href },
+  { name: 'JavaScript', icon: new URL('../assets/js.png', import.meta.url).href },
   { name: 'java', icon: new URL('../assets/java.png', import.meta.url).href },
-  { name: 'vue', icon: new URL('../assets/vue_logo.png', import.meta.url).href },
+  { name: 'vue', icon: new URL('../assets/vue.png', import.meta.url).href },
   { name: 'Git', icon: new URL('../assets/git.png', import.meta.url).href },
   { name: 'GitHub', icon: new URL('../assets/github.png', import.meta.url).href },
-  { name: 'MYSQL', icon: new URL('../assets/MYSQL.png', import.meta.url).href },
+  { name: 'MYSQL', icon: new URL('../assets/mysql.png', import.meta.url).href },
   { name: 'Python', icon: new URL('../assets/python.png', import.meta.url).href },
   { name: 'Flask', icon: new URL('../assets/flask.png', import.meta.url).href },
   // add more here
@@ -40,24 +39,21 @@ onMounted(() => {
   trackWidth.value = track.value.scrollWidth
   animate()
 })
-
 </script>
-
 
 <template>
   <div class="carousel">
-  <div
-    class="track"
-    ref="track"
-    :style="{ transform: `translateX(${translateX}px)` }"
-  >
-    <div class="card d-flex justify-content-center align-items-center gap-2 " v-for="(skill, index) in duplicatedSkills" :key="index">
-      <img :src="skill.icon" :alt="skill.name" />
-      <span>{{ skill.name }}</span>
+    <div class="track" ref="track" :style="{ transform: `translateX(${translateX}px)` }">
+      <div
+        class="card d-flex justify-content-center align-items-center gap-2"
+        v-for="(skill, index) in duplicatedSkills"
+        :key="index"
+      >
+        <img :src="skill.icon" :alt="skill.name" />
+        <span>{{ skill.name }}</span>
+      </div>
     </div>
   </div>
-</div>
-
 </template>
 <style scoped>
 .carousel {
@@ -89,5 +85,4 @@ onMounted(() => {
   object-fit: contain;
   margin-bottom: 8px;
 }
-
 </style>

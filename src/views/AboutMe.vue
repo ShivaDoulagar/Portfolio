@@ -1,11 +1,9 @@
 <script setup>
-import TimelineCard from '@/components/TimelineCard.vue';
+import TimelineCard from '@/components/TimelineCard.vue'
 import bluestockslogo from '@/assets/bluestocks.png'
 import aws from '@/assets/aws.png'
 import biet from '@/assets/biet.png'
 import iitm from '@/assets/iitm.png'
-
-
 
 const journeyItems = [
   {
@@ -13,22 +11,24 @@ const journeyItems = [
     dateRange: 'February 2025 - March 2025',
     description: 'Worked as a software development intern focusing on front-end development.',
     position: 'right',
-    image: bluestockslogo
+    image: bluestockslogo,
   },
   {
     title: 'AWS Forage ',
     dateRange: 'August 2025',
-    description: 'Completed the Solutions Architecture Job Simulation on August 5th, 2025, gaining hands-on experience in designing scalable and efficient system solutions.',
+    description:
+      'Completed the Solutions Architecture Job Simulation on August 5th, 2025, gaining hands-on experience in designing scalable and efficient system solutions.',
     position: 'left',
-    image: aws
+    image: aws,
   },
   {
     title: 'B.Tech – Computer Science (BIET)',
     subtitle: 'Bharat Institute of Engineering and Technology, Hyderabad (2022 - 2026)',
     dateRange: '2022 - 2026',
-    description: 'Focused on full-stack development, AI projects, and cloud computing technologies.',
+    description:
+      'Focused on full-stack development, AI projects, and cloud computing technologies.',
     position: 'right',
-    image: biet
+    image: biet,
   },
   {
     title: ' Dual Degree – Data Science (IIT Madras)',
@@ -36,13 +36,13 @@ const journeyItems = [
     dateRange: '2022 - ongoing',
     description: 'Built an early interest in coding, building basic web applications and projects.',
     position: 'left',
-    image: iitm
-  }
+    image: iitm,
+  },
 ]
 </script>
 
 <template>
-  <section id="about_me overflow-x-hidden">
+  <section id="about_me">
     <div class="about_me text-light">
       <div class="content">
         <h1 class="main-title">My Journey</h1>
@@ -50,9 +50,16 @@ const journeyItems = [
         <div class="timeline-container">
           <div class="timeline-line"></div>
 
-          <TimelineCard v-for="(item, index) in journeyItems" :key="index" :title="item.title" :subtitle="item.subtitle"
-            :date-range="item.dateRange" :description="item.description" :image="item.image"
-            :position="item.position" />
+          <TimelineCard
+            v-for="(item, index) in journeyItems"
+            :key="index"
+            :title="item.title"
+            :subtitle="item.subtitle"
+            :date-range="item.dateRange"
+            :description="item.description"
+            :image="item.image"
+            :position="item.position"
+          />
         </div>
       </div>
     </div>
@@ -61,16 +68,9 @@ const journeyItems = [
 
 <style scoped>
 #about_me {
-  width: 100vw;
-  height: 100vh;
-  /* make the about section exactly viewport height */
-  /* background-color: black; */
+  width: 98vw;
   position: relative;
-  /* overflow-y: auto; */
-  /* allow internal scrolling if content exceeds viewport */
 }
-
-
 
 .about_me {
   position: relative;
@@ -78,8 +78,6 @@ const journeyItems = [
   padding: 80px 20px;
   width: 100%;
 }
-
-
 
 .content {
   max-width: 1200px;
@@ -91,7 +89,7 @@ const journeyItems = [
   text-align: center;
   font-size: 3rem;
   font-weight: 700;
-  color: #FE4A2B;
+  color: #fe4a2b;
   margin-bottom: 80px;
   /* text-shadow: 0 0 20px rgba(74, 222, 128, 0.5); */
 }
@@ -107,11 +105,7 @@ const journeyItems = [
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(to bottom,
-      transparent,
-      #FE4A2B,
-      #FE4A2B,
-      transparent);
+  background: linear-gradient(to bottom, transparent, #fe4a2b, #fe4a2b, transparent);
   transform: translateX(-50%);
 }
 
@@ -123,9 +117,9 @@ const journeyItems = [
   transform: translateX(-50%);
   width: 12px;
   height: 12px;
-  background: #FE4A2B;
+  background: #fe4a2b;
   border-radius: 50%;
-  box-shadow: 0 0 20px #FE4A2B;
+  box-shadow: 0 0 20px #fe4a2b;
 }
 
 .timeline-line::before {
