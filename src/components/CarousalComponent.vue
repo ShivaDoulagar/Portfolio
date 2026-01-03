@@ -12,6 +12,7 @@ const skills = [
   { name: 'MYSQL', icon: new URL('../assets/mysql.png', import.meta.url).href },
   { name: 'Python', icon: new URL('../assets/python.png', import.meta.url).href },
   { name: 'Flask', icon: new URL('../assets/flask.png', import.meta.url).href },
+  { name: 'Bash', icon: new URL('../assets/bash.png', import.meta.url).href },
   // add more here
 ]
 

@@ -9,8 +9,7 @@
         <div class="navbar gap-4 d-flex justify-content-center align-items-center">
           <a class="" data-aos="fade-down" data-aos-delay="100" href="#Home">Home</a>
           <a class="" data-aos="fade-down" data-aos-delay="200" href="#about_me">About me</a>
-          <a class="" data-aos="fade-down" data-aos-delay="300" href="#">Projects</a>
-          <a class="" data-aos="fade-down" data-aos-delay="400" href="#">Experience</a>
+          <a class="" data-aos="fade-down" data-aos-delay="300" href="#projects">Projects</a>
           <a class="" data-aos="fade-down" data-aos-delay="500" href="#">Contact me</a>
           <!-- <button @click="toggleTheme" value="dark" class="ps-3 toggle-btn  " data-aos="fade-down" data-aos-delay="600"
             href="#">

@@ -30,7 +30,8 @@ let projects = [
 </script>
 
 <template>
-  <div class="projects d-flex flex-column justify-content-around align-items-center">
+  <div data-aos="fade-up" class="overflow-x-hidden">
+  <div class="projects d-flex flex-column justify-content-around align-items-center overflow-x-hidden">
     <h1>Projects</h1>
     <div class="cards-container d-flex gap-4 flex-fill flex-wrap justify-content-center mt-4">
       <div v-for="(project, index) in projects" class="card-wrapper" :key="index">
@@ -51,6 +52,7 @@ let projects = [
         </div>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
