@@ -83,6 +83,7 @@ a:hover {
   text-shadow: 0 0 40px #fe4a2b;
   list-style: underline;
   transform: scale(1.1);
+  transition: linear 0.2s;
 }
 
 @media (max-width: 768px) {
