@@ -25,7 +25,7 @@
               src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
           </a>
           <a href="https://github.com/shiva-doulagar" target="_blank" class="social_btn">
-            <img  class="social_icons" src="https://imgs.search.brave.com/pWE8N2g7FjVPBFCWhJ29IzDciTJGvv28Kits--mkJew/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzQ4LzIvZ2l0aHVi/LWxvZ28tcG5nX3Nl/ZWtsb2dvLTQ4MDQ1/MC5wbmc"
+            <img  class="social_icons" src="../assets/github.png"
               alt="GitHub">
           </a>
           <a href="https://www.instagram.com/shiva.doulagar/" target="_blank" class="social_btn">
@@ -47,19 +47,24 @@
 
 
 .typingEffect {
-    display: inline-block;
-    width: 0;
-    overflow: hidden;
-    max-width: fit-content;
-    border-right: 2px solid white;
-    /* Remove the font-size: 16px; line so it inherits from h3 */
-    white-space: nowrap;
-    animation: typing 5s steps(30) forwards, blink 0.75s step-end infinite;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid currentColor;
+  width: fit-content;
+  max-width: 0;
+  animation: typing 4s steps(14, end) forwards,
+    blink 0.75s step-end infinite;
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    max-width: 0
+  }
+
+  to {
+    max-width: 100%
+  }
 }
 
 /* Add the blinking cursor animation */
@@ -87,8 +92,9 @@ p{
   width: 50px;
   /* filter: grayscale(100%); */
   height: 50px;
+  background-color: var(--text-primary);
   border-radius: 50%;
-  border: 2px solid #ffffff;
+  border: 1px solid var(--text-primary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,6 +109,7 @@ p{
 
 .social_icons {
   width: 60%;
+  background-color:var(--text-primary);
   height: 60%;
   /* filter: invert(1); */
   /* white icons by default */
@@ -132,14 +139,25 @@ p{
 
 h1 {
   font-size: 5em;
+  color: var(--text-primary);
+}
+h3{
+  color: var(--text-primary);
+  display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
+p{
+  color: var(--text-primary);
+}
 .my_image {
   margin-top: -60px;
   height: 78vh;
   width: 70%;
   /* transform: scalex(-1); */
-  ;
+  background-color: yellow;
+  z-index: 15;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 0 50px #FE4A2B;
@@ -219,4 +237,6 @@ img:hover {
     background: blue;
   }
 }
+
+
 </style>

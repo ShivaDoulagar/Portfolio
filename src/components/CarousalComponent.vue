@@ -60,7 +60,7 @@ onMounted(() => {
 .carousel {
   overflow: hidden;
   width: 100%;
-  background: #000;
+  background: var(--inverted-bg);
   padding: 20px 0;
 }
 

@@ -19,6 +19,9 @@ import Navbar from '@/components/NavBar.vue';
 
 
 <style scoped>
-
+.navbar {
+  background-color: transparent !important;
+  z-index: 1 !important;
+}
 
 </style>

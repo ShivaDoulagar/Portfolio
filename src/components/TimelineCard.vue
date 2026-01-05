@@ -77,20 +77,20 @@ defineProps({
 }
 
 .card-date {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-secondary);
   font-size: 0.875rem;
   margin-bottom: 12px;
 }
 
 .card-subtitle {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-secondary);
   font-size: 0.75rem;
   margin-bottom: 12px;
   font-weight: 500;
 }
 
 .card-description {
-  color: rgba(255, 255, 255, 0.7);
+  color:var(--text-secondary);
   font-size: 0.75rem;
   line-height: 1.6;
   margin: 0;

@@ -1,21 +1,23 @@
 [data-bs-theme='light'] {
-  background-color: white !important;
-  color: black !important;
+  background-color: white;
+  color: black;
+  --text-primary: #000;
+  --text-secondary: #333;
+  --nav-link: #000;
+  --accent: #fe4a2b;
+  --inverted-bg: #fff;
 }
 
 [data-bs-theme='dark'] {
   background-color: black;
-  color: white !important;
+  color: white;
+  --text-primary: #fff;
+  --text-secondary: #ccc;
+  --nav-link: #fff;
+  --accent: #fe4a2b;
+  --inverted-bg: #333;
 }
+body {
+  color: var(--text-primary) !important;
 
-[data-bs-theme='light'] .firstpage,
-[data-bs-theme='light'] navbar {
-  background-color: white !important;
-  color: black !important;
-}
-
-[data-bs-theme='dark'] .firstpage,
-[data-bs-theme='dark'] .navbar {
-  background-color: black !important;
-  color: white !important;
 }

@@ -1,4 +1,20 @@
-<script setup></script>
+<script setup>
+import { ref, onMounted } from 'vue'
+
+const theme = ref(localStorage.getItem('theme') || 'light')
+
+onMounted(() => {
+  document.body.setAttribute('data-bs-theme', theme.value)
+})
+
+function toggleTheme() {
+  theme.value = theme.value === 'light' ? 'dark' : 'light'
+  document.body.setAttribute('data-bs-theme', theme.value)
+  localStorage.setItem('theme', theme.value)
+}
+</script>
+
+
 <template>
   <nav class="overflow-x-hidden">
     <div class="navbar w-100 d-flex justify-content-around align-items-center text-light">
@@ -11,10 +27,10 @@
           <a class="" data-aos="fade-down" data-aos-delay="200" href="#about_me">About me</a>
           <a class="" data-aos="fade-down" data-aos-delay="300" href="#projects">Projects</a>
           <a class="" data-aos="fade-down" data-aos-delay="500" href="#">Contact me</a>
-          <!-- <button @click="toggleTheme" value="dark" class="ps-3 toggle-btn  " data-aos="fade-down" data-aos-delay="600"
+          <button @click="toggleTheme" value="dark" class="ps-3 toggle-btn  " data-aos="fade-down" data-aos-delay="600"
             href="#">
             <i :class="theme === 'light' ? 'bi bi-moon-fill' : 'bi bi-sun-fill'"></i>
-          </button> -->
+          </button>
         </div>
       </div>
     </div>
@@ -28,13 +44,12 @@
 
 .toggle-btn {
   background-color: transparent;
-  color: white;
   border: none;
+  color: var(--text-primary) ;
 }
 
 nav {
-  background-color: rgba(255, 255, 255, 0) !important;
-
+  background-color: transparent;
   /* border-bottom: #b3b3b3; */
   width: 100vw;
   /* height: 1vh; */
@@ -43,10 +58,7 @@ nav {
   z-index: 1;
 }
 
-[data-bs-theme='light'] nav {
-  background-color: white;
-  color: black !important;
-}
+
 
 .navbar {
   background: transparent !important;
@@ -61,25 +73,21 @@ h1 {
 
 a {
   position: relative;
-  color: white;
   text-decoration: underline;
+  color: var(--text-primary);
   padding: 4px 0;
-  background: linear-gradient(to left, white 50%, #fe4a2b 50%);
+  background: linear-gradient(to left,
+      var(--nav-link) 50%,
+      var(--accent) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-decoration: underline;
-  transform: scale(1);
-  transition:
-    background-position 0.2s ease-in-out,
-    transform 0.3s ease-in-out;
   font-size: 20px;
-  text-shadow: 0 0 80px #fe4a2b;
+  text-shadow: 0 0 80px var(--accent);
 }
 
-a:hover {
-  background-position: left bottom;
+a:hover {background-position: left bottom;
   text-shadow: 0 0 40px #fe4a2b;
   list-style: underline;
   transform: scale(1.1);
@@ -107,3 +115,4 @@ a:hover {
   }
 }
 </style>
+
