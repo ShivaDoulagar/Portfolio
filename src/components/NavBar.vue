@@ -31,7 +31,7 @@ function toggleTheme() {
           <a class="" data-aos="fade-down" data-aos-delay="100" href="#Home">Home</a>
           <a class="" data-aos="fade-down" data-aos-delay="200" href="#about_me">About me</a>
           <a class="" data-aos="fade-down" data-aos-delay="300" href="#projects">Projects</a>
-          <a class="" data-aos="fade-down" data-aos-delay="500" href="#">Contact me</a>
+          <a class="" data-aos="fade-down" data-aos-delay="500" href="#contact_me">Contact me</a>
           <button @click="toggleTheme" value="dark" class="ps-3 toggle-btn  " data-aos="fade-down" data-aos-delay="600"
             href="#">
             <i :class="theme === 'light' ? 'bi bi-moon-fill' : 'bi bi-sun-fill'"></i>

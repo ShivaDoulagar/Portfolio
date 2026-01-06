@@ -55,6 +55,7 @@ const handleSubmit = () => {
 </script>
 
 <template>
+  <section id="contact_me">
   <div class="contact-page d-flex flex-column align-items-center">
     <div class="contact-header">
       <h1 class="contact-title">Get In Touch</h1>
@@ -114,6 +115,7 @@ const handleSubmit = () => {
       </div>
     </div>
   </div>
+  </section>
 </template>
 
 <style scoped>
