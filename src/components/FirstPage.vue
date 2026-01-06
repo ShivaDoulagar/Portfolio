@@ -3,10 +3,10 @@
 </script>
 
 <template>
-  <div class="text-light d-flex flex-wrap firstpage ">
-    <div class="left d-flex justify-content-center align-items-center">
-      <div class="image d-flex justify-content-center align-items-center">
-        <img data-aos="fade-right" class="my_image" src="../assets/img.png" alt="My Image">
+  <div class="text-light d-flex flex-wrap firstpage  overflow-visible">
+    <div class="left d-flex justify-content-center align-items-center overflow-visible">
+      <div class="image d-flex justify-content-center align-items-center overflow-visible">
+        <img data-aos="fade-right" class="my_image " src="../assets/img.png" alt="My Image">
       </div>
     </div>
     <div class="center text-light"></div>
@@ -20,16 +20,16 @@
           frontend and backend development, transforming ideas into
           functional digital experiences using modern technologies.</span> </p>
         <div class="links d-flex gap-3 mt-4">
-          <a href="https://www.linkedin.com/in/shiva-doulagar/" target="_blank" class="social_btn">
+          <a href="www.linkedin.com/in/shiva-doulagar-95b494287" target="_blank" class="social_btn">
             <img class="social_icons"
-              src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+              src="../assets/link.png" alt="LinkedIn">
           </a>
-          <a href="https://github.com/shiva-doulagar" target="_blank" class="social_btn">
+          <a href="https://github.com/shivadoulagar" target="_blank" class="social_btn">
             <img  class="social_icons" src="../assets/github.png"
               alt="GitHub">
           </a>
           <a href="https://www.instagram.com/shiva.doulagar/" target="_blank" class="social_btn">
-            <img class="social_icons" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+            <img class="social_icons" src="../assets/instagram.png"
               alt="Instagram">
           </a>
         </div>
@@ -86,13 +86,16 @@ p{
   font-size: 1.2rem;
 }
 
+[data-bs-theme="dark"] .social_icons{
+  filter: invert(100%);
+}
 
 
 .social_btn {
   width: 50px;
   /* filter: grayscale(100%); */
   height: 50px;
-  background-color: var(--text-primary);
+  background-color: var(--background-card);
   border-radius: 50%;
   border: 1px solid var(--text-primary);
   display: flex;
@@ -109,7 +112,7 @@ p{
 
 .social_icons {
   width: 60%;
-  background-color:var(--text-primary);
+  /* background-color:var(--text-primary); */
   height: 60%;
   /* filter: invert(1); */
   /* white icons by default */
@@ -125,6 +128,7 @@ p{
 .left {
   width: 49vw;
   height: 90vh;
+  overflow: visible;
   /* background-color: gray; */
 }
 
@@ -134,6 +138,7 @@ p{
   /* background-color: aliceblue; */
   height: 40vh;
   z-index: 5;
+  overflow: visible;
 
 }
 
@@ -155,8 +160,6 @@ p{
   margin-top: -60px;
   height: 78vh;
   width: 70%;
-  /* transform: scalex(-1); */
-  background-color: yellow;
   z-index: 15;
   object-fit: cover;
   border-radius: 50%;

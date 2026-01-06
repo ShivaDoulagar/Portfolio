@@ -6,6 +6,7 @@
   --nav-link: #000;
   --accent: #fe4a2b;
   --inverted-bg: #fff;
+  --background-card: #f8f9fa;
 }
 
 [data-bs-theme='dark'] {
@@ -16,8 +17,10 @@
   --nav-link: #fff;
   --accent: #fe4a2b;
   --inverted-bg: #333;
+  --background-card: #222;
 }
+
+
 body {
   color: var(--text-primary) !important;
-
 }

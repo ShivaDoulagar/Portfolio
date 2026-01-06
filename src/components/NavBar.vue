@@ -16,10 +16,15 @@ function toggleTheme() {
 
 
 <template>
-  <nav class="overflow-x-hidden">
+  <nav class="overflow-visible" >
     <div class="navbar w-100 d-flex justify-content-around align-items-center text-light">
       <div class="nav_heading">
         <h1 data-aos="fade-right">Shiva Doulagar</h1>
+        <div class="theme_mobile">
+          <button @click="toggleTheme" value="dark" class="ps-3 toggle-btn  " data-aos="fade-down" data-aos-delay="100"
+            href="#"><i :class="theme === 'light' ? 'bi bi-moon-fill' : 'bi bi-sun-fill'"></i>
+          </button>
+        </div>
       </div>
       <div class="right">
         <div class="navbar gap-4 d-flex justify-content-center align-items-center">
@@ -40,6 +45,10 @@ function toggleTheme() {
 <style scoped>
 * {
   box-sizing: border-box;
+}
+
+.theme_mobile{
+  display: none;
 }
 
 .toggle-btn {
@@ -98,11 +107,14 @@ a:hover {background-position: left bottom;
   .right {
     display: none;
   }
-
+  .theme_mobile {
+    display:block;
+  }
   .nav_heading {
+    width: 80vw;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content:space-between;
     margin-left: 20px;
   }
 

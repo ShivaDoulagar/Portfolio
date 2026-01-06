@@ -60,7 +60,7 @@ onMounted(() => {
 .carousel {
   overflow: hidden;
   width: 100%;
-  background: var(--inverted-bg);
+  background: transparent;
   padding: 20px 0;
 }
 
@@ -74,8 +74,8 @@ onMounted(() => {
   width: fit-content;
   margin: 0 12px;
   padding: 16px;
-  background: #1a1a1a;
-  color: white;
+  background-color: var(--background-card);
+  color: var(--text-primary);
   border-radius: 12px;
   text-align: center;
 }

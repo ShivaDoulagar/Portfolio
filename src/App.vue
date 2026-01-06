@@ -2,6 +2,8 @@
 import AboutMe from './views/AboutMe.vue';
 import HomeView from './views/HomeView.vue';
 import ProjectsPage from './views/ProjectsPage.vue';
+import ContactMe from './views/ContactMe.vue';
+
 
 
 import { onMounted } from 'vue'
@@ -19,13 +21,16 @@ onMounted(() => {
 <template>
 
   <div>
-    <HomeView></HomeView>
+    <HomeView class="overflow-visible"></HomeView>
   </div>
   <div>
     <AboutMe></AboutMe>
   </div>
   <div>
     <ProjectsPage></ProjectsPage>
+  </div>
+  <div>
+    <ContactMe></ContactMe>
   </div>
 
 </template>

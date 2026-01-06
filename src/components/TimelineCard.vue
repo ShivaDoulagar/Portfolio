@@ -91,7 +91,7 @@ defineProps({
 
 .card-description {
   color:var(--text-secondary);
-  font-size: 0.75rem;
+  font-size: 1rem;
   line-height: 1.6;
   margin: 0;
 }

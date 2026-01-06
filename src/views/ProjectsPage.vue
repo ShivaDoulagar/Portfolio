@@ -22,7 +22,7 @@ import ProjectCard from '@/components/ProjectCard.vue';
 #projects{
   box-sizing: border-box;
   width: 99vw;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 </style>

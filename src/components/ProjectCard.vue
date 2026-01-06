@@ -69,12 +69,15 @@ let projects = [
   min-width: 280px;
 }
 
+
+
+
 .card {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(145deg, #0f0f0f 0%, #1a1a1a 50%, #0f0f0f 100%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background: var(--background-card) !important;
+  border: 1px solid var(--text-secondary) !important;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   position: relative;
@@ -88,10 +91,20 @@ let projects = [
   left: -50%;
   width: 200%;
   height: 200%;
-  background: conic-gradient(from 0deg, transparent, rgba(59, 130, 246, 0.3), transparent 60deg);
+  background: conic-gradient(from 0deg, transparent, rgba(254, 74, 43, 0.3), transparent 60deg);
   animation: rotate 6s linear infinite;
   opacity: 0;
   transition: opacity 0.5s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .card:hover::before {
@@ -107,11 +120,11 @@ let projects = [
   z-index: 0;
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 .card:hover {
   transform: translateY(-16px) rotateX(2deg);
@@ -128,6 +141,15 @@ let projects = [
   height: 100%;
   position: relative;
   z-index: 1;
+}
+
+.card a .card-title {
+  color: var(--text-primary) !important;
+}
+
+.card a:hover .card-title {
+  color: var(--accent);
+  text-shadow: 0 0 20px rgba(254,74,43,0.5);
 }
 
 .card-img-wrapper {
@@ -168,7 +190,7 @@ let projects = [
 }
 
 .card-body {
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--background-card);
   backdrop-filter: blur(20px);
   position: relative;
   z-index: 1;
@@ -180,12 +202,12 @@ let projects = [
 }
 
 .card-title {
-  color: #fff;
+  color: var(text-primary);
   font-weight: 700;
   font-size: 1.2rem;
   margin-bottom: 1rem;
   transition: all 0.3s;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.3px;
 }
 
@@ -196,7 +218,7 @@ let projects = [
 }
 
 .card-text {
-  color: #b8b8b8;
+  color: var(--text-secondary);
   font-size: 0.9rem;
   line-height: 1.7;
   transition: color 0.3s;
