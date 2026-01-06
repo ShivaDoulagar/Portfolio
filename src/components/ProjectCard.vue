@@ -130,9 +130,9 @@ let projects = [
   transform: translateY(-16px) rotateX(2deg);
   box-shadow:
     0 25px 50px rgba(0, 0, 0, 0.7),
-    0 0 60px rgba(59, 130, 246, 0.3),
+    0 0 60px var(--accent),
     inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
-  border-color: rgba(59, 130, 246, 0.5) !important;
+  border-color: var(--accent)!important;
 }
 
 .card a {
@@ -231,7 +231,7 @@ let projects = [
 
 .card-footer-accent {
   height: 3px;
-  background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
   margin-top: 1rem;
   border-radius: 2px;
   transform: scaleX(0);
