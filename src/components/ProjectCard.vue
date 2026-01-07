@@ -130,7 +130,7 @@ let projects = [
   transform: translateY(-16px) rotateX(2deg);
   box-shadow:
     0 25px 50px rgba(0, 0, 0, 0.7),
-    0 0 60px var(--accent),
+    0 0 30px var(--accent),
     inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
   border-color: var(--accent)!important;
 }

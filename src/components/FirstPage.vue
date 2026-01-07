@@ -200,7 +200,7 @@ img:hover {
 
   .left {
     position: absolute;
-    width: 100vw;
+    width: 90vw;
     display: flex;
     flex-direction: column;
   }

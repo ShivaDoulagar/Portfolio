@@ -93,7 +93,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 20px;
-  text-shadow: 0 0 80px var(--accent);
+  /* text-shadow: 0 0 30px #8a2513a5; */
 }
 
 a:hover {background-position: left bottom;
