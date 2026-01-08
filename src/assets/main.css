@@ -7,10 +7,12 @@
   --accent: #fe4a2b;
   --inverted-bg: #fff;
   --background-card: #f8f9fa;
+    transition: 200ms ease-in-out;
 }
 
 [data-bs-theme='dark'] {
   background-color: black;
+  transition: 200ms ease-in-out;
   color: white;
   --text-primary: #fff;
   --text-secondary: #ccc;
